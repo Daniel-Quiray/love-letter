@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Love Letter to Jessa</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      color: #780C28;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Container for the heart background image */
+    .heart-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Send it behind content */
+      background: linear-gradient(45deg, #ff6b81, #ff9a8b); /* Gradient for the background */
+      opacity: 0.5; /* Adjust opacity if needed */
+    }
+
+    /* Customizable title color */
+    :root {
+      --title-color: #ff005c; /* Default title color (changeable) */
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-family: 'Georgia', serif;
+      color: var(--title-color);
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Glowing text effect */
+      animation: titleEffect 2s ease-in-out infinite alternate; /* Animation effect */
+    }
+
+    @keyframes titleEffect {
+      0% {
+        color: var(--title-color);
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6), 0px 0px 20px var(--title-color);
+      }
+      100% {
+        color: #ff69b4;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6), 0px 0px 40px #ff69b4;
+      }
+    }
+
+    .letter-container {
+      max-width: 900px;
+      width: 900%; /* Adjust width to be more responsive */
+      padding: 30px;
+      background-color: #E5989B;
+      border-radius: 20px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(135deg, #FFCDB2, #f7c9d9);
+      border: 2px solid #f1a7b3; /* Soft border */
+      animation: smoothIn 1s ease-out;
+    }
+
+    @keyframes smoothIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .letter {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      letter-spacing: 0.5px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+      font-family: 'Georgia', serif;
+      color: #4a1a1a;
+      padding: 10px;
+      background: #FFEDFA;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Falling Rose Petals */
+    .falling-petals {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .petal {
+      position: absolute;
+      animation: fall 10s linear infinite;
+      opacity: 0.7;
+      z-index: 1;
+      transform: rotate(0deg);
+    }
+
+    @keyframes fall {
+      0% {
+        top: -10%;
+        opacity: 1;
+      }
+      100% {
+        top: 110%;
+        opacity: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Heart Background Image -->
+  <div class="heart-background">
+    <img src="heart.png" alt="Heart Pattern" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;">
+  </div>
+
+  <!-- Falling Rose Petals -->
+  <div class="falling-petals">
+    <img src="rose-petals.png" class="petal" style="left: 20%; animation-delay: 2s;" width="30" />
+    <img src="rose-petals.png" class="petal" style="left: 40%; animation-delay: 4s;" width="30" />
+    <img src="rose-petals.png" class="petal" style="left: 60%; animation-delay: 3s;" width="30" />
+    <img src="rose-petals.png" class="petal" style="left: 80%; animation-delay: 5s;" width="30" />
+  </div>
+
+  <!-- Love Letter Content -->
+  <div class="letter-container">
+    <div class="letter">
+      <h1>To My Wifey, Jessa</h1>
+      <p>kinikilig na ba and baby ko?,</p>
+      <p>Happy Valentine's! 🥰</p>
+      <p>Wanna start by saying that I feel super lucky to have you in my life. Sobrang saya ko everytime na kasama kita. Grabe, parang every moment with you is just a dream. Sobrang dami kong gustong sabihin, pero I’m not even sure if the right words can fully express how much you mean to me. But I’ll try, because you deserve all the sweetest words.</p>
+      <p>Baby, you’re not just my girlfriend, you're my best friend, my partner in crime, and the one who makes my world so much better. You're the reason for my smiles, and I don’t know what I’d do without you. I’m so grateful for all the moments we've shared whether it’s the quiet and simple ones or yung mga kalokahan nating dalawa. <br> You make every day special mahal ko.</p>
+      <p>Sana malaman mo na, no matter what happens, I will always choose you. I will always fight for us. Kasi ikaw lang, ikaw lang ang pinakamahalaga sa'kin. Ikaw ang kumukumpleto saken, Jessa. So, I just wanna tell you na I love you so much, in ways that words can’t fully describe. Ikaw na yung perfect girl para sa'kin, and I promise to keep loving you more everyday.</p>
+      <p>Happy Valentine's again, my love! Can’t wait for more memories with you, and more adventures and endless love. I miss you so much baby 💖</p>
+      <p>Your Handsome Husband, <br> Engr. Mark Daniel Quiray, PCpE</p>
+    </div>
+  </div>
+
+</body>
+</html>
